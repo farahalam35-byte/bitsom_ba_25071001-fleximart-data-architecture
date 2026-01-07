@@ -1,0 +1,38 @@
+FlexiMart Data Quality Report
+----------------------------
+
+Dataset: customers_raw.csv
+Records processed: 22
+Duplicate records removed: 2
+Missing values handled:
+- Missing emails: 3 (records dropped)
+- Inconsistent phone formats: standardized to +91-XXXXXXXXXX
+Records loaded successfully: 17
+
+Dataset: products_raw.csv
+Records processed: 16
+Duplicate records removed: 1
+Missing values handled:
+- Missing prices: 2 (records dropped)
+- Null stock values: replaced with 0
+- Category names standardized (electronics → Electronics)
+Records loaded successfully: 13
+
+Dataset: sales_raw.csv
+Records processed: 32
+Duplicate transactions removed: 3
+Missing values handled:
+- Invalid customer/product IDs: 2 (records dropped)
+- Date formats standardized to YYYY-MM-DD
+Records loaded successfully: 27
+
+Summary
+-------
+Total records processed: 70
+Total duplicates removed: 6
+Total records loaded into database: 57
+
+Notes:
+- All transformations were applied during the ETL process using Python.
+- Data integrity was maintained using foreign key constraints.
+- Cleaned data was successfully loaded into the MySQL database.

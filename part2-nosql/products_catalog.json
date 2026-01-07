@@ -1,0 +1,40 @@
+[
+  {
+    "product_id": "ELEC001",
+    "name": "Samsung Galaxy S21",
+    "category": "Electronics",
+    "price": 79999,
+    "stock": 150,
+    "specs": {
+      "ram": "8GB",
+      "storage": "128GB"
+    },
+    "reviews": [
+      {
+        "user": "U001",
+        "rating": 5,
+        "comment": "Great phone",
+        "date": "2024-01-15"
+      }
+    ]
+  },
+  {
+    "product_id": "ELEC002",
+    "name": "Apple MacBook Air",
+    "category": "Electronics",
+    "price": 99999,
+    "stock": 60,
+    "specs": {
+      "ram": "16GB",
+      "processor": "M1"
+    },
+    "reviews": [
+      {
+        "user": "U002",
+        "rating": 4,
+        "comment": "Very smooth",
+        "date": "2024-02-10"
+      }
+    ]
+  }
+]
